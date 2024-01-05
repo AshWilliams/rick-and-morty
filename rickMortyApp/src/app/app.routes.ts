@@ -7,7 +7,7 @@ import { ViewChapterDetailComponent } from './view-chapter-detail/view-chapter-d
 export const routes: Routes = [
   { path: '', redirectTo: 'Home', pathMatch: 'full'},
   { path: 'Home', component: HomeComponent },
-  { path: 'ViewEpisode/:employeeId', component: ViewChapterDetailComponent }
+  { path: 'ViewEpisode/:episodeId', component: ViewChapterDetailComponent }
 ];
  
 @NgModule({

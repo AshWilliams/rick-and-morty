@@ -1,1 +1,46 @@
-<p>view-chapter-detail works!</p>
+
+<div class="container-xl">
+    <div class="">
+      <div class="table-wrapper">
+        <div class="table-title">
+          <div class="row">
+            <div class="col-sm-4">
+              <h4><b>Episode Details</b></h4>
+            </div>
+            <div class="col-sm-4">
+              <a href="#" routerLink="/Home" class="btn btn-success back"><i class='fas'></i>
+                 Go Back</a>
+            </div>
+          </div>
+        </div>
+        <form>
+          <div class="table-content">
+            <div class="form-group p-8 row">
+              <div class="col-sm-3">
+                <label for="Episode" class="p-t-b-10">Episode</label>
+              </div>
+              <div class="col-sm-5">
+                <input type="text" class="form-control" id="Episode" value="{{ episodeDetailsForm.Episode }}" name="Episode">               
+              </div>
+            </div>
+            <div class="form-group p-8 row">
+              <div class="col-sm-3">
+                <label for="Name" class="p-t-b-10">Name</label>
+              </div>
+              <div class="col-sm-5">
+                <input type="text" class="form-control" id="Name" value="{{ episodeDetailsForm.Name }}" name="Name">                
+              </div>
+            </div> 
+            <div class="form-group p-8 row">
+                <div class="col-sm-3">
+                  <label for="AirDate" class="p-t-b-10">Air Date</label>
+                </div>
+                <div class="col-sm-5">
+                  <input type="text" class="form-control" id="Name" value="{{ episodeDetailsForm.AirDate }}" name="AirDate">                
+                </div>
+              </div> 
+        </div>           
+      </form>
+      </div>
+    </div>
+  </div>

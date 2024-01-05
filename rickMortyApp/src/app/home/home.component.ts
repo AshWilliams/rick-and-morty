@@ -21,10 +21,10 @@ export class HomeComponent implements OnInit {
     console.log('Episode added');
   }
   ngOnInit(): void {
-    this.getAllEpisodes();
+    this.getAllEpisodes('1');
   }
-  async getAllEpisodes() {
-    this.httpProvider.getAllEpisodes().subscribe((data : any) => {
+  async getAllEpisodes(pageId: string) {
+    this.httpProvider.getAllEpisodes(pageId).subscribe((data : any) => {
       if (data != null && data.body != null) {
         var resultData = data.body;
         if (resultData) {

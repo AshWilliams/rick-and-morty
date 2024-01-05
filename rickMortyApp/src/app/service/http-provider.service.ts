@@ -16,11 +16,11 @@ var httpLink = {
 export class HttpProviderService {
   constructor(private webApiService: WebApiService) { }
 
-  public getAllEpisodes(): Observable<any> {
-    return this.webApiService.get(httpLink.getAllEpisodes);
+  public getAllEpisodes(pageId: string): Observable<any> {
+    return this.webApiService.get(httpLink.getAllEpisodes + '?page=' + pageId);
   }
-  public getEpisodeById(model: any): Observable<any> {
-    return this.webApiService.get(httpLink.getEpisodeById + '/' + model);
+  public getEpisodeById(episodeId: string): Observable<any> {
+    return this.webApiService.get(httpLink.getEpisodeById + '/' + episodeId);
   }
  
 }                          
